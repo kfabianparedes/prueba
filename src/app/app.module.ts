@@ -2,13 +2,18 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-
+import { AppRoutingModule } from './app-routing.module';
+import { NuevoComponent } from './nuevo/nuevo.component';
+import { ViejoComponent } from './viejo/viejo.component';
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NuevoComponent,
+    ViejoComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
